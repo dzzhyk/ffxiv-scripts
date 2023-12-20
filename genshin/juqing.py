@@ -41,7 +41,7 @@ class ListenStartProcess(Process):
                     if msg is not None:
                         pg.moveTo(msg, duration=0.3)
                         left_click()
-                self.lock.wait(timeout=0.5)
+                self.lock.wait(timeout=0.7)
 
     def run(self):
         with keyboard.Listener(on_press=self.on_press) as listener:
