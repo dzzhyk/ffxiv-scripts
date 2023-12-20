@@ -34,7 +34,7 @@ class ListenStartProcess(Process):
                 left_click()
                 msg = None
                 try:
-                    msg = pg.locateOnWindow("./msg.png", window_name, confidence=0.8)
+                    msg = pg.locateOnWindow("genshin/msg.png", window_name, confidence=0.8)
                 except Exception:
                     pass
                 finally:
